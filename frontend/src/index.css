@@ -1,0 +1,124 @@
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #213547;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+header h1 span {
+  color: #ffc107; /* Optional highlight */
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 1.2rem 3.5rem rgba(0, 0, 0, 0.2) !important;
+  border-bottom: 4px solid #198754 !important; /* green bottom highlight */
+}
+
+.feature-card .text-success {
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .text-success {
+  color: #ffc107; /* Optional icon color change on hover */
+}
+
+@media (max-width: 767px) {
+  .feature-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.display-6 {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .display-6 {
+    font-size: 1.5rem;
+  }
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+footer .text-secondary {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
